@@ -1,0 +1,83 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* fundo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 450px;
+    width: 100%;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* sombra mais suave e profunda */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+input, select {
+    padding: 12px;
+    width: 85%;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #10b981; /* cor de foco mais destacada */
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6); /* sombra ao focar */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #059669;
+    transform: scale(1.05); /* efeito de aumento suave */
+}
+
+button:active {
+    transform: scale(1); /* efeito de clique */
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #111827;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.resultado.error {
+    color: #e74c3c; /* cor para mensagens de erro */
+}
+
+.resultado.success {
+    color: #2ecc71; /* cor para resultados de sucesso */
+}
